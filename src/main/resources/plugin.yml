@@ -1,0 +1,33 @@
+name: TPA
+version: '${project.version}'
+main: top.craft_hello.tpa.TPA
+api-version: '1.13'
+author: WarSkyGod
+website: https://github.com/WarSkyGod/TPA
+folia-supported: true
+
+commands:
+  tpa:
+    usage: /tpa <玩家名称>
+    description: 向玩家发送传送请求
+  tphere:
+    usage: /tphere <玩家名称>
+    description: 请求玩家传送到你身边
+  tpaccept:
+    usage: /tpaccept
+    description: 接受传送请求（你可以点击聊天框里的 [接受/tpaccept] 来直接接受）
+  tpdeny:
+    usage: /tpdeny
+    description: 拒绝传送请求（你可以点击聊天框里的 [拒绝/tpdeny] 来直接拒绝）
+  warp:
+    usage: /warp <传送点>
+    description: 传送到传送点
+  setwarp:
+    usage: /setwarp <传送点>
+    description: 设置传送点（需要 tpa.setwarp 权限）
+  tpareload:
+    usage: /tpareload
+    description: 重新加载配置文件（需要 tpa.reload 权限）
+  back:
+    usage: /back
+    description: 回到死亡点
